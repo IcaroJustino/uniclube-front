@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@theme {  
+    --color-header: oklch(0.91 0.03 87);
+    --color-subheader: oklch(0.66 0.82 29);
+    --color-graytext: oklch(0.68 0 180);
+
+}
+
+body{
+    max-width: 1920px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
