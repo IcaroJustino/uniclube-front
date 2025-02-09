@@ -1,0 +1,47 @@
+{
+    "departamentos": [
+      {
+        "nome": "Saúde e Bem-estar",
+        "categorias": ["Beleza", "Cuidados Pessoais", "Esportes e Aventura"]
+      },
+      {
+        "nome": "Casa",
+        "categorias": ["Casa, Jardim e Limpeza", "Móveis e Decoração", "Construção"]
+      },
+      {
+        "nome": "Estilo",
+        "categorias": ["Vestuário", "Calçados", "Bijuterias e Acessórios"]
+      },
+      {
+        "nome": "Tincidunt",
+        "categorias": ["Tempor", "Consequat"]
+      },
+      {
+        "nome": "Eletro",
+        "categorias": ["Eletrodomésticos", "Celulares, Tablets e Acessórios", "Câmeras e Acessórios"]
+      },
+      {
+        "nome": "Ipsum Lorem",
+        "categorias": ["Sit Amet", "Consequat", "Pellentesque"]
+      }
+    ],
+
+    "extras":[
+        {
+            "nome": "Mais Departamentos",
+            "categorias": [
+              "Petshop",
+              "Produtos Regionais",
+              "Brinquedos e Jogos",
+              "Livros",
+              "Música e Hobbies",
+              "Bebês",
+              "Alimentos e Bebidas",
+              "Agro e Indústria"
+            ]
+          }
+    ]
+
+
+  }
+  

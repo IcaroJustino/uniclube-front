@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import Loading from "../loading-page";
+import Header from "../../components/header";
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
@@ -17,5 +18,11 @@ export default function Home() {
     return () => window.removeEventListener("load", handleLoad);
   }, []);
 
-  return loading ? <Loading /> : <main>Content</main>;
+  return loading ? (
+    <Loading />
+  ) : (
+    <main className="">
+      <Header />
+    </main>
+  );
 }
