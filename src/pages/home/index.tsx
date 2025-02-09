@@ -21,7 +21,7 @@ export default function Home() {
   return loading ? (
     <Loading />
   ) : (
-    <main className="h-[1000vh]">
+    <main className="">
       <Header />
     </main>
   );
