@@ -58,6 +58,7 @@ export default function MobileMenu() {
                 placeholder="Digite seu e-mail ou CPF"
                 className=" p-2 px-4 border border-gray-300 w-full  rounded-4xl bg-white"
               />
+              {UserCPF}
               <button
                 type="submit"
                 className="bg-orange-400 absolute w-[80px] h-[42px] text-center rounded-4xl right-0 top-0"
