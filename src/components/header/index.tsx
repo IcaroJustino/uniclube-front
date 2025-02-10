@@ -33,7 +33,7 @@ export default function Header() {
   };
 
   const cepBox = CepboxVisible && (
-    <div className="  mt-2 p-5 border border-gray-500 mr-10 bg-[#EAE0D5] w-[280px] absolute left-35 transform -translate-x-1/2 translate-y-2 transition-all ease-out duration-300 opacity-100 rounded-lg shadow-lg">
+    <div className="  mt-2 p-5 border z-[99] border-gray-500 mr-10 bg-[#EAE0D5] w-[280px] absolute left-35 transform -translate-x-1/2 translate-y-2 transition-all ease-out duration-300 opacity-100 rounded-lg shadow-lg">
       <label
         htmlFor="cep"
         className="block text-sm font-medium text-gray-700"
