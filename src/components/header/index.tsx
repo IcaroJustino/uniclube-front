@@ -166,7 +166,7 @@ export default function Header() {
               <img src={LocationIcon} alt="" className="w-[15px]" />
             </div>
             {UserCPF == "" ? (
-              <p className="lg:text-base text-sm w-full flex my-auto gap-x-0.5 ml-1">
+              <p className="lg:text-base text-sm  flex my-auto gap-x-0.5 ml-1">
                 <span className="font-semibold inline-block">Onde</span> você
                 está?
               </p>

@@ -75,7 +75,7 @@ export default function Products() {
     <div
       className="p-10 max-w-[80%] my-[30px] mb-[100px] m-auto rounded-4xl min-h-[530px] bg-cover "
       style={{
-        backgroundImage: `url(/src/static/unimedbackground.png)`,
+        backgroundImage: `url(/public/unimedbackground.png)`,
       }}
     >
       <div className="text-white text-3xl mb-5">
