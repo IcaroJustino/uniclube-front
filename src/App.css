@@ -7,6 +7,33 @@
 
 }
 
+@layer utilities {
+    .custom-scrollbar {
+      scrollbar-width: thin; /* Firefox */
+      scrollbar-color: #888 transparent; /* Cor da barra e fundo */
+    }
+  
+    .custom-scrollbar::-webkit-scrollbar {
+      width: 4px; /* Largura da barra de rolagem */
+      height: 4px; /* Altura da barra de rolagem horizontal */
+    }
+  
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background-color: #888; /* Cor do "thumb" da barra */
+      border-radius: 10px; /* Borda arredondada */
+    }
+  
+    .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+      background-color: #555; /* Cor ao passar o mouse */
+    }
+  
+    .custom-scrollbar::-webkit-scrollbar-track {
+      background: transparent; /* Fundo da barra */
+    }
+  }
+  
+  
+
 body{
     max-width: 1920px;
     width: 100%;

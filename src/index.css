@@ -1,1 +1,13 @@
 @import "tailwindcss";
+
+html, body {
+    overflow-x: auto; /* Mantém a rolagem horizontal funcionando */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer e Edge antigo */
+  }
+  
+  html::-webkit-scrollbar, 
+  body::-webkit-scrollbar {
+    display: none; /* Chrome, Safari e Edge moderno */
+  }
+  
