@@ -73,16 +73,16 @@ export default function Products() {
 
   return (
     <div
-      className="p-10 max-w-[80%] my-[30px] mb-[100px] m-auto rounded-4xl min-h-[530px] bg-cover "
+      className="lg:p-10 p-2 lg:max-w-[80%] max-w-[90%] my-[30px] mb-[100px] m-auto rounded-4xl min-h-[530px] bg-cover "
       style={{
         backgroundImage: `url(/unimedbackground.png)`,
       }}
     >
-      <div className="text-white text-3xl mb-5">
-        <h2 className="text-white text-3xl bg-red-500"></h2>
+      <div className="text-white lg:text-3xl text-xl lg:p-0 p-2 mb-5">
+        <h2 className="text-white text-3xl "></h2>
         Desconto cliente <span className="font-bold">Unimed Natal</span>
       </div>
-      <div className="flex flex-wrap  justify-between gap-5">
+      <div className="flex flex-wrap flex-row justify-between gap-5">
         {products.map((product) => (
           <ProductCard
             title={product.title}
