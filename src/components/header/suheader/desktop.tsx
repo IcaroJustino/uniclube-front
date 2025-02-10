@@ -81,7 +81,7 @@ export default function SubmenuDesktop() {
   );
 
   return (
-    <div className="w-full bg-[#EAE0D5] relative">
+    <div className="w-full bg-[#F7F3EE] relative">
       <div className="w-[80%]  mx-auto    flex justify-between py-[15px] ">
         <div className="flex flex-row">
           <button
@@ -96,7 +96,7 @@ export default function SubmenuDesktop() {
               <img src={orangearrow} className="my-auto" />
             )}
           </button>
-          <div className="h-full w-[3px] mx-5 bg-[#070605] opacity-50"></div>
+          <div className="h-full w-[2px] mx-5 bg-[#EAE0D5] opacity-80"></div>
           <span className="text-[#3F3F3F] font-normal text-base my-auto ">
             Descontos Cliente Unimed Natal
           </span>

@@ -84,10 +84,10 @@ export default function Header() {
   );
 
   return (
-    <div className="bg-header lg:fixed lg:top-0 lg:left-1/2 lg:transform lg:-translate-x-1/2 w-full m-auto z-[99] ">
-      <div className="w-full relative z-[99] min-h-28 h-full flex-col lg:flex hidden">
+    <div className="bg-[#EAE0D5] lg:fixed lg:top-0 lg:left-1/2 lg:transform  lg:-translate-x-1/2 w-full m-auto z-[99] max-w-[1920px]">
+      <div className="relative z-[99] min-h-28  h-full flex-col lg:flex hidden">
         <hr className="bg-[#F47920] h-[8px] w-full"></hr>
-        <section className=" h-full py-5 w-full justify-center flex lg:flex-row flex-col my-auto lg:gap-x-[2rem]  ">
+        <section className="px-6 h-full py-5 w-full justify-center flex lg:flex-row flex-col my-auto lg:gap-x-[2rem]  ">
           <div className="flex lg:w-[60%] lg:flex-row flex-col gap-x-5">
             <img
               src={Logo}
