@@ -21,7 +21,7 @@ export const Carousel = () => {
   };
 
   return (
-    <div className="carousel-container m-auto max-w-[80%] my-[35px]">
+    <div className="carousel-container m-auto max-w-[80%] my-[35px] lg:mt-50">
       <Slider {...settings}>
         <div>
           <img

@@ -59,12 +59,11 @@ export default function SubmenuDesktop() {
       <div className="  bg-[#FAF7F4] py-10 w-full  flex  ">
         <div className=" w-[80%] m-auto h-fit flex flex-row justify-start hover:text-black">
           {Array.from({ length: 9 }).map((_, index) => (
-            <div className=" flex flex-col justify-evenly m-auto cursor-pointer ">
-              <img
-                key={index}
-                src={loadingImage}
-                className="w-[90px] h-[90px] m-auto "
-              />
+            <div
+              key={index}
+              className=" flex flex-col justify-evenly m-auto cursor-pointer "
+            >
+              <img src={loadingImage} className="w-[90px] h-[90px] m-auto " />
               <span className="text-center w-1/2  m-auto text-[#737373] text-base font-semibold ">
                 Loren Ipsum
               </span>

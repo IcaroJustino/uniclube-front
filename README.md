@@ -1,50 +1,43 @@
-# React + TypeScript + Vite
+# Como Rodar o Projeto
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Para rodar o projeto, siga os passos abaixo:
 
-Currently, two official plugins are available:
+## Rodar Localmente
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+1. **Navegue até o diretório do projeto:**
+  ```bash
+  cd seu-repositorio
+  ```
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+1. **Instale as dependências:**
+  ```bash
+  npm install
+  ```
 
-- Configure the top-level `parserOptions` property like this:
+1. **Inicie o servidor de desenvolvimento:**
+  ```bash
+  npm run dev
+  ```
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+1. **Acesse o projeto no navegador:**
+  Abra o navegador e vá para `http://localhost:5173`
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+Pronto! Agora você deve ver o projeto rodando.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## Rodar com Docker Compose
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+1. **Navegue até o diretório do projeto:**
+  ```bash
+  cd seu-repositorio
+  ```
+
+1. **Construa e inicie os contêineres:**
+  ```bash
+  docker-compose up --build
+  ```
+
+1. **Acesse o projeto no navegador:**
+  Abra o navegador e vá para `http://localhost:5173`
+
+Pronto! Agora você deve ver o projeto rodando em contêineres Docker.
