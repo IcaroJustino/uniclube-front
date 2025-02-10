@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import Loading from "../loading-page";
 import Header from "../../components/header";
 import { Carousel } from "../../components/carrousel";
+import Departamentos from "../../components/departamentos";
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
@@ -25,6 +26,7 @@ export default function Home() {
     <main className="">
       <Header />
       <Carousel />
+      <Departamentos />
     </main>
   );
 }
