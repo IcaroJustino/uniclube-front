@@ -80,7 +80,7 @@ export default function Products() {
     >
       <div className="text-white lg:text-3xl text-xl lg:p-0 p-2 mb-5">
         <h2 className="text-white text-3xl "></h2>
-        Desconto cliente <span className="font-bold">Unimed Natal</span>
+        Descontos cliente <span className="font-bold">Unimed Natal</span>
       </div>
       <div className="flex flex-wrap flex-row justify-between gap-5">
         {products.map((product) => (
