@@ -3,6 +3,7 @@ import Loading from "../loading-page";
 import Header from "../../components/header";
 import { Carousel } from "../../components/carrousel";
 import Departamentos from "../../components/departamentos";
+import Products from "../../components/products";
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
@@ -27,6 +28,7 @@ export default function Home() {
       <Header />
       <Carousel />
       <Departamentos />
+      <Products />
     </main>
   );
 }

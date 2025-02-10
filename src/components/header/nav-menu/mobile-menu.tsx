@@ -32,8 +32,8 @@ export default function MobileMenu() {
   };
 
   const loginBox = LoginBoxVisible && (
-    <div className="bg-black/50  h-full  z-[99]  top-0 absolute w-screen right-0 px-2 ">
-      <div className="w-[60%]  absolute  flex flex-col justify-start h-full right-0  bg-header">
+    <div className="bg-black/50  h-full z-[99] top-0 fixed w-full right-0 px-2 ">
+      <div className="w-[70%]  absolute  flex flex-col justify-start h-full right-0  bg-header">
         <hr className="bg-[#F47920] h-[10px] w-full flex flex-row "></hr>
         <div className="p-5">
           <div className="flex flex-row justify-between">
@@ -85,7 +85,7 @@ export default function MobileMenu() {
           </button>
           {loginBox}
         </li>
-        <li className="relative  inline-block  cursor-pointer">
+        <li className="  inline-block  cursor-pointer">
           <div className="rounded-full w-[40px] h-[40px]  bg-[#F7F3EE] flex justify-center">
             <img src={Shopcart} alt="" className="w-[24px] h-[44px] " />
           </div>

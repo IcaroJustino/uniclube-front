@@ -7,9 +7,11 @@ import LocationIcon from "../../icons/location.svg";
 import MobileMenu from "./nav-menu/mobile-menu";
 import { useEffect, useState } from "react";
 import SubmenuDesktop from "./suheader/desktop";
+import menujson from "../../config/menuOptions.json";
 
 export default function Header() {
   const [CepboxVisible, setCepboxVisible] = useState(false);
+  const [ShowSideMenu, setShowSideMenu] = useState(false);
 
   const [UserCPF, setUserCPF] = useState("");
 
@@ -57,8 +59,32 @@ export default function Header() {
     </div>
   );
 
+  const mobileSideMenu = ShowSideMenu && (
+    <div className="bg-black/50  h-full z-[99] top-0 fixed w-full left-0  ">
+      <div className="w-[60%]  absolute  flex flex-col justify-start h-full left-0  bg-header ">
+        <button
+          className="text-[#F47920] hover:text-black font-bold text-4xl mx-4 cursor-pointer absolute right-0"
+          onClick={() => setShowSideMenu(false)}
+        >
+          X
+        </button>
+        <div className="flex flex-col  h-full gap-y-4 overflow-y-scroll ">
+          <h1 className="p-5 text-[#3F3F3F] font-semibold ">Departamentos</h1>
+          {menujson.departamentos.map((item, index) => (
+            <div
+              className="flex flex-col outline-1 p-5 font-semibold text-[#3F3F3F] cursor-pointer hover:bg-black/20"
+              key={index}
+            >
+              {item.nome}
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+
   return (
-    <div className="bg-header ">
+    <div className="bg-header lg:fixed lg:top-0 lg:left-1/2 lg:transform lg:-translate-x-1/2 w-full m-auto z-[99] ">
       <div className="w-full relative z-[99] min-h-28 h-full flex-col lg:flex hidden">
         <hr className="bg-[#F47920] h-[8px] w-full"></hr>
         <section className=" h-full py-5 w-full justify-center flex lg:flex-row flex-col my-auto lg:gap-x-[2rem]  ">
@@ -97,9 +123,13 @@ export default function Header() {
         <div className="flex flex-row px-2">
           <div className=" h-full w-full my-auto">
             <div className="flex flex-row justify-items-start">
-              <button className="cursor-pointer">
+              <button
+                className="cursor-pointer"
+                onClick={() => setShowSideMenu(true)}
+              >
                 <img src={mobileMenu} className="ml-2 w-[2rem]" />
               </button>
+              {mobileSideMenu}
               <img
                 src={Logo}
                 alt="Logo"

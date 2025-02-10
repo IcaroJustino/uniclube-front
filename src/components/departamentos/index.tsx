@@ -59,8 +59,11 @@ export default function Departamentos() {
       {departamentos &&
         departamentos.map((departamento) => {
           return (
-            <div className="flex max-w-[150px]  w-full flex-col justify-start hover:text-black">
-              <div className="w-[96px] h-[96px] rounded-full mx-auto bg-[#EAE0D5] hover:bg-[#F47920]/50 flex justify-center">
+            <div
+              className="flex max-w-[150px]  w-full flex-col justify-start hover:text-black cursor-pointer"
+              key={departamento.title}
+            >
+              <div className="w-[96px] h-[96px] rounded-full mx-auto bg-[#EAE0D5] hover:bg-[#F47920]/30 flex justify-center">
                 <img
                   src={departamento.image}
                   className="w-[50px] h-[50px] m-auto hover:fill-white hover:text-white"
