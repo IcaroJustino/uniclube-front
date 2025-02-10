@@ -7,7 +7,7 @@ Para rodar o projeto, siga os passos abaixo:
 
 1. **Navegue até o diretório do projeto:**
   ```bash
-  cd seu-repositorio
+  cd uniclube-front
   ```
 
 1. **Instale as dependências:**
@@ -21,15 +21,14 @@ Para rodar o projeto, siga os passos abaixo:
   ```
 
 1. **Acesse o projeto no navegador:**
-  Abra o navegador e vá para `http://localhost:5173`
+  Acesse `http://localhost:5173`
 
-Pronto! Agora você deve ver o projeto rodando.
 
-## Rodar com Docker Compose
+##  Com Docker Compose
 
 1. **Navegue até o diretório do projeto:**
   ```bash
-  cd seu-repositorio
+  cd uniclube-front
   ```
 
 1. **Construa e inicie os contêineres:**
