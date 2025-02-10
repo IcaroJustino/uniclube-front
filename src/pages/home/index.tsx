@@ -9,16 +9,17 @@ export default function Home() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Verifica se a página já carregou
-    const handleLoad = () => setLoading(false);
+    const handleLoad = () => setTimeout(() => setLoading(false), 500);
 
     if (document.readyState === "complete") {
-      setLoading(false);
+      setTimeout(() => setLoading(false), 500);
     } else {
       window.addEventListener("load", handleLoad);
     }
 
-    return () => window.removeEventListener("load", handleLoad);
+    return () => {
+      window.removeEventListener("load", handleLoad);
+    };
   }, []);
 
   return loading ? (
